@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class='main-content'>
+<!-- <div class='header'><p>{{page.date | date: "%A %B %d %Y" }}</p></div> -->
+        <div class='body-post'>
+			<div class='image-feeds'>
+					<img class='main-image'src="{{base}}/img/{{page.image}}" width=900px;/>
+				<div class='larger tags'>
+					<ul class="tag_list">
+					{% for tag in page.tags %}
+						<li class="tags"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<div class='buffer'></div>
+			<div class='text'>
+				<div class='contributor-info'>
+							<div class='circular'></div>
+							<h3 class='contributor-name'>{{page.contributor}}</h3>
+							<img class='twitter' src="{{base}}/img/twitter-bird-light-bgs.png"/>
+							<img class='facebook' src="{{base}}/img/FB-f-Logo__blue_29.png"/>
+				</div>
+			<div class='article-title-container'>
+				<h1 class='article-title'>{{ page.title }}</h1>
+			</div>
+			{{ content }}
+		</div>
+		</div>		
+		<div class='related-title'>RELATED ARTICLES</div>
+		<div class='container-related'>
+				<div class='left-nav-triangle'></div>
+					<div class='all-related-articles'>
+						{% for post in site.categories.mustread limit:3 %}
+						{% if forloop.index != 3 %}
+						<a class='no-tag-link' href='{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
+						</div></a>
+						{% endif %}
+						{% if forloop.index == 3 %}
+						<a class='no-tag-link' href='{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						{% endif %}
+						{% endfor %}
+					</div>
+				<div class='right-nav-triangle'></div>
+		</div>
+		
+</div>

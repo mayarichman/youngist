@@ -1,0 +1,8 @@
+auto: true
+server: true
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
+baseurl:
+production_url : http://username.github.com
+permalink: /:title

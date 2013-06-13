@@ -1,0 +1,60 @@
+		<div class='container-related'>
+				<div class='related-left-nav-triangle'></div>
+					<div class='all-related-articles'>
+						{% for post in site.categories.mustread limit:3 %}
+						{% if forloop.index == 1 %}
+						<a class='no-tag-link' href='{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
+						</div></a>
+						{% endif %}
+						{% if forloop.index == 2 %}
+						<a class='no-tag-link' href='{{post.url}}'><div class='related-article-image-blank'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						{% endif %}
+						{% if forloop.index == 3 %}
+						<a class='no-tag-link' href='{{post.url}}'><div class='last-related-article-image-blank'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						{% endif %}
+						{% endfor %}
+					</div>
+				<div class='related-right-nav-triangle'></div>
+		</div>
+
+	<div class='trending-title'>TRENDING</div>
+	<div class='container-trending'>
+	<div class='related-left-nav-triangle'></div>
+	<div class='all-trending-articles'>
+	{% for post in site.categories.trending limit:5 %}
+		<a class='no-tag-link' href='{{post.url}}'><div class='trending-article-image-blank'><h3 class='trending-article-title'>{{ post.title }}</h3></div></a>
+	{% endfor %}
+	</div>
+	<div class='related-right-nav-triangle'></div>
+	</div>
+
+	Original
+	
+	<div class='container-trending'>
+	<div class='left-nav-triangle'>
+		{% if page.previous.url %} 
+                <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+        {% endif %} 
+	</div>
+	<div class='trending-title'>TRENDING</div>
+	{% for post in site.categories.trending limit:5 %}
+	<!-- {% if forloop.index == 1 %}
+	<a class='no-tag-link' href='{{post.url}}'>
+		<div class='trending-article-image'><h3 class='trending-article-title'>{{ post.title }}</h3></div></a>
+	{% endif %}
+	{% if forloop.index != 1 %} -->
+		<a class='no-tag-link' href='{{post.url}}'><div class='trending-article-image-blank'><h3 class='trending-article-title'>{{ post.title }}</h3></div></a>
+	<!-- {% endif %}	 -->
+	{% endfor %}
+	<div class='right-nav-triangle'> <!-- Trying to make articles move -->
+			{% for post in site.categories.trending %}
+				{% if page.url %}
+				 <!-- {{post.next.title}} -->
+                <!-- <a href="{{post.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a>  -->
+				{% endif %} 
+			{% endfor %}
+	</div>
+	</div>
+	
