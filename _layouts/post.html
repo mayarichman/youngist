@@ -34,11 +34,11 @@ layout: default
 					<div class='all-related-articles'>
 						{% for post in site.categories.mustread limit:3 %}
 						{% if forloop.index != 3 %}
-						<a class='no-tag-link' href='youngist/{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
+						<a class='no-tag-link' href='/youngist/{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
 						</div></a>
 						{% endif %}
 						{% if forloop.index == 3 %}
-						<a class='no-tag-link' href='youngist/{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						<a class='no-tag-link' href='/youngist/{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
 						{% endif %}
 						{% endfor %}
 					</div>
