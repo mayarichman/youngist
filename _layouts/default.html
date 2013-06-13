@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <link rel="shortcut icon" href="{{base}}/img/favicon.ico">
 <title>{Young}ist</title>
-<link rel="stylesheet" href="{{base}}/style.css" type="text/css" />
+<link type="text/css" rel="stylesheet" href='/youngist/style.css'>
  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
  <script src="{{base}}/js/jquery.slides.min.js"></script>
 <script type="text/javascript">
@@ -22,7 +22,7 @@
 
 </script>
 </head>
-<body {% if page.class %}class="{{page.class}}"{% endif %}  onload="prettyPrint()">
+<body {% if page.class %}class="{{page.class}}"{% endif %} >
 <div class='header-container'>
 	<a class='header-title-link' href='{{base}}/'><div class='header-title'><font style='font-size:37px;'>{</font><font style='color:#e68b24;font-weight:bold;'>young</font><font style='font-size:37px;'>}</font>ist<!-- logo --></div></a>
 	<div class='header-about'>ABOUT</div>
