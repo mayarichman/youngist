@@ -9,7 +9,7 @@ layout: default
 				<div class='larger tags'>
 					<ul class="tag_list">
 					{% for tag in page.tags %}
-						<li class="tags"><a class="tag_list_link" href="{{site.baseurl}}/tag/{{ tag }}">{{ tag }}</a></li>
+						<li class="tags"><a class="tag_list_link" href="{{site.baseurl}}/tag/{{ tag }}/">{{ tag }}</a></li>
 					{% endfor %}
 					</ul>
 				</div>
@@ -34,11 +34,11 @@ layout: default
 					<div class='all-related-articles'>
 						{% for post in site.categories.mustread limit:3 %}
 						{% if forloop.index != 3 %}
-						<a class='no-tag-link' href='{{site.baseurl}}{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
+						<a class='no-tag-link' href='{{site.baseurl}}/{{post.url}}/'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
 						</div></a>
 						{% endif %}
 						{% if forloop.index == 3 %}
-						<a class='no-tag-link' href='{{site.baseurl}}{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						<a class='no-tag-link' href='{{site.baseurl}}/{{post.url}}/'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
 						{% endif %}
 						{% endfor %}
 					</div>
