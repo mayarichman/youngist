@@ -3,6 +3,6 @@ server: true
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
-baseurl: 
+baseurl: /youngist
 production_url : http://username.github.com
 permalink: /:title

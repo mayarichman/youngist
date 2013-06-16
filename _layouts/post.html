@@ -5,11 +5,11 @@ layout: default
 <!-- <div class='header'><p>{{page.date | date: "%A %B %d %Y" }}</p></div> -->
         <div class='body-post'>
 			<div class='image-feeds'>
-					<img class='main-image'src="{{base}}/youngist/img/{{page.image}}" width=900px;/>
+					<img class='main-image'src="{{site.baseurl}}/img/{{page.image}}" width=900px;/>
 				<div class='larger tags'>
 					<ul class="tag_list">
 					{% for tag in page.tags %}
-						<li class="tags"><a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a></li>
+						<li class="tags"><a class="tag_list_link" href="{{site.baseurl}}/tag/{{ tag }}">{{ tag }}</a></li>
 					{% endfor %}
 					</ul>
 				</div>
@@ -19,8 +19,8 @@ layout: default
 				<div class='contributor-info'>
 							<div class='circular'></div>
 							<h3 class='contributor-name'>{{page.contributor}}</h3>
-							<img class='twitter' src="{{base}}/youngist/img/twitter-bird-light-bgs.png"/>
-							<img class='facebook' src="{{base}}/youngist/img/FB-f-Logo__blue_29.png"/>
+							<img class='twitter' src="{{site.baseurl}}/img/twitter-bird-light-bgs.png"/>
+							<img class='facebook' src="{{site.baseurl}}/img/FB-f-Logo__blue_29.png"/>
 				</div>
 			<div class='article-title-container'>
 				<h1 class='article-title'>{{ page.title }}</h1>
@@ -34,11 +34,11 @@ layout: default
 					<div class='all-related-articles'>
 						{% for post in site.categories.mustread limit:3 %}
 						{% if forloop.index != 3 %}
-						<a class='no-tag-link' href='/youngist/{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
+						<a class='no-tag-link' href='{{site.baseurl}}{{post.url}}'><div class='related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3>
 						</div></a>
 						{% endif %}
 						{% if forloop.index == 3 %}
-						<a class='no-tag-link' href='/youngist/{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
+						<a class='no-tag-link' href='{{site.baseurl}}{{post.url}}'><div class='last-block related-article-image'><h3 class='related-article-title'>{{ post.title }}</h3></div></a>
 						{% endif %}
 						{% endfor %}
 					</div>
