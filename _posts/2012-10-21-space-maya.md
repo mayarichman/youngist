@@ -1,15 +1,5 @@
 ---
-published: false
-layout: post
-date: 2012-10-21T00:00:00.000Z
-title: "Space, yo"
-tagline: "What we aren't reading"
-image: "youngist-stock-photo.png"
-size: null
-categories: 
-  - big
-tags: 
-  - space
+published: true
 ---
 
 <div class='full-text'>
