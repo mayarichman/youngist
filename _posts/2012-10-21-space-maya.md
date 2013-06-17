@@ -9,7 +9,6 @@ size: null
 categories: 
   - big
 ---
-
 <div class='full-text'>
 <p class='first-paragraph'>They asked me why I was so dark skinned when I entered my father’s village. They questioned where I got my looks from, because a father with a Shah Rukh Khan complexion and a mother who was Katrina Kaif skinned couldn’t reproduce such a thing. I was advised not to spend too much time in the sun. I hear the word forsha, which translates to “light skinned” being a synonym for good looking. Because when people ask how the new bride, or the newborn looked, forsha was the adjective to sum up the situation.</p>
 <p class='article-paragraph'>The desi boys knew it. I knew it as well. I wasn’t attractive in their opinion. The way my dark colored big eyes were against my dark mocha skin tone didn’t attract them. And it didn’t have to. I grew up disliking myself a bit. All the “love yourself” talks in the world could not eliminate the subconscious thoughts roaming around my head about beauty and how it really feels and looks like.</p>
