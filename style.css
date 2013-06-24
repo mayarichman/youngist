@@ -109,17 +109,38 @@ a {
 	color:white;
 	padding: 20px;
 	font-size:20px;
+	opacity:0;
 }
-.trending-article-image:hover, .must-read-article-image:hover, .related-article-image:hover{
-	background: #F4C290;
-	opacity:.80;
-}
-.trending-article-image{
+.trending-article-box{
 	background:#f3f4f4;
 	width: 258px;
 	height: 150px;
 	margin:0 15px 0 0;
-	float: left;	
+	float: left;
+	display:block;
+}
+.trending-article-bg{
+	position: relative;
+	width: 258px;
+	height: 150px;
+	margin:0 15px 0 0;
+	float: left;
+	display:block;	
+}
+.trending-article-box:hover .trending-article-bg, .must-read-article-image:hover, .related-article-image:hover{
+/*	background: #F4C290;*/
+	background:url(http://f.cl.ly/items/283H042u44310m2E2R1o/orange-transparent-01.png);
+}
+.trending-article-box:hover .trending-article-bg:hover .trending-article-title{
+	opacity:1;
+}
+.trending-image{
+	position:absolute;
+}
+.hide{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
 }
 /* Big Story */
 .container{
@@ -287,8 +308,9 @@ ul.tag_list{
 
 /* article layout */
 
-.main-image{
-	width:900px;	
+#main-image{
+	padding: 100px 0 0 30px;
+	background:darkgray;
 }
 .body-post{
 	background: #FFFFFF;
@@ -323,7 +345,7 @@ ul.tag_list{
 .image-feeds{
 	position: relative;
 }
-.main-image{
+#main-image{
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -423,7 +445,7 @@ h3.contributor-name{
 	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
 }
 .buffer{
-	height: 580px;
+	height: 480px;
 }
 .last-block {
 	margin: 0 0 0 0;

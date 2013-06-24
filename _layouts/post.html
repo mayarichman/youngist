@@ -5,7 +5,12 @@ layout: default
 <!-- <div class='header'><p>{{page.date | date: "%A %B %d %Y" }}</p></div> -->
         <div class='body-post'>
 			<div class='image-feeds'>
-					<img class='main-image'src="{{site.baseurl}}/img/{{page.image}}" width=900px;/>
+				<!-- Images will eventually all be put on flickr -->
+				{% if page.imagetype == "link" %}
+				<img id='main-image'src="{{page.image}}" height=400px; />
+				{% else %}
+				<img id='main-image'src="{{site.baseurl}}/img/{{page.image}}" height=400px;/>
+				{% endif %}
 				<div class='larger tags'>
 					<ul class="tag_list">
 					{% for tag in page.tags %}
@@ -14,17 +19,34 @@ layout: default
 					</ul>
 				</div>
 			</div>
+			<script>
+			window.onload = function() {
+			var img = document.getElementById('main-image'); 
+			//or however you get a handle to the IMG
+			// var rect = img.getBoundingClientRect();
+			// var width = (img.naturalWidth);// *1.941747573;
+			var width = img.clientWidth;
+			// console.log(natu);
+			console.log(width);
+			var paddingFill = 900 - width;
+			console.log(paddingFill);
+			var padding = paddingFill + "px";
+			document.getElementById('main-image').style.paddingRight=padding;
+			//assign padding value according toimage width
+			}
+			</script>
 			<div class='buffer'></div>
 			<div class='text'>
 				<div class='contributor-info'>
 							<div class='circular'></div>
-							<h3 class='contributor-name'>{{page.contributor}}</h3>
+							{% for contributor in page.contributors %}
+							<a href="{{site.baseurl}}/contributor/{{ contributor }}/"><h3 class='contributor-name'>{{ contributor }}</h3></a>
+							{% endfor %}
 							<img class='twitter' src="{{site.baseurl}}/img/twitter-bird-light-bgs.png"/>
 							<img class='facebook' src="{{site.baseurl}}/img/FB-f-Logo__blue_29.png"/>
 				</div>
 			<div class='article-title-container'>
-				<meta></meta>
-				<h1 class='article-title'>{{ page.title }}</h1>
+				<h1 class='article-title'>{{ page.headline }}</h1>
 			</div>
 			{{ content }}
 		</div>
