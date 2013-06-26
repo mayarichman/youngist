@@ -8,6 +8,8 @@ title: "Meet the Editors: Muna Mire! - {young}ist"
 excerpt: This text describes the article for the meta tag
 contributors: 
 - Muna Mire
+image: http://media.tumblr.com/e228e51a5d4097a72e673c039b2ccd60/tumblr_inline_mon9xs96rN1qz4rgp.jpg
+imagetype: link
 categories:
 - newest
 tags:
@@ -19,9 +21,6 @@ tags:
 - writing
 - media
 ---
-<p><span></span></p>
-<p><span><strong><img alt="image" src="http://media.tumblr.com/e228e51a5d4097a72e673c039b2ccd60/tumblr_inline_mon9xs96rN1qz4rgp.jpg"/></strong></span></p>
-
 <p><span><strong>Who are you? </strong></span></p>
 <p><span>My name is Muna Mire, my pronouns are she/her/hers they/them/theirs. I&#8217;m a student journalist. Nice to meet you!</span></p>
 

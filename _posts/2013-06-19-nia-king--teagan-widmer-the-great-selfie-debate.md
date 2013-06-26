@@ -11,7 +11,6 @@ contributors:
 - Teagan Widmer
 categories:
 - mustread
-title: ! 'Nia King & Teagan Widmer: The Great Selfie Debate'
 tags:
 - selfie
 - selfshot

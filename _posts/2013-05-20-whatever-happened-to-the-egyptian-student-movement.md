@@ -6,6 +6,8 @@ headline: "Whatever Happened to the Egyptian Student Movement?"
 tagline: ""
 title: "Whatever Happened to the Egyptian Student Movement? - {young}ist"
 excerpt: This text describes the article for the meta tag
+image: http://media.tumblr.com/e37e0472948219443a8b16635c0f6c1a/tumblr_inline_mn4c6zTGje1qz4rgp.jpg
+imagetype: link
 contributors: 
 tags:
 - egypt

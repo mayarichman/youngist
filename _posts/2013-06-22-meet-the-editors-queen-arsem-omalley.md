@@ -7,7 +7,7 @@ tagline: "Introducing the world {young}ist staff"
 title: "Meet the Editors: Queen Arsem-O''Malley! - {young}ist"
 excerpt: This text describes the article for the meta tag
 contributors: 
-- Queen Arsem-O''Malley
+- Queen Arsem-O'Malley
 categories:
 - newest
 tags:
@@ -18,7 +18,6 @@ tags:
 imagetype: link
 image: "http://media.tumblr.com/93b87acfb7b37bf19859f3677d1f141e/tumblr_inline_mot9riVaNa1qz4rgp.jpg"
 ---
-<!-- <img alt="image" src="http://media.tumblr.com/93b87acfb7b37bf19859f3677d1f141e/tumblr_inline_mot9riVaNa1qz4rgp.jpg"/> -->
 <div class='full-text'>
 	<p class='first-paragraph'><strong>Who are you?</strong> </p>
 <p class='article-paragraph'>I’m Queen, one of the editors for Youngist. I’m a 21-year-old recent graduate who should probably spend more time looking for jobs and less time watching Arrested Development. I previously wrote and edited for a campus newspaper at McGill, and am currently also an editor for CanCulture, an online magazine devoted to covering Canadian culture from a youth perspective.</p>

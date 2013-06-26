@@ -47,7 +47,7 @@ table {
 }
 body{
 	background:#e6e7e7;
-	font-family:'DINPro';
+	font-family:'DINPro-Bold';
 }
 
 a {
@@ -79,7 +79,7 @@ a {
 	padding:15px 0px 15px 0;
 	text-align:center;
 	font-size:17px;
-	font-family:'DINPro';
+	font-family:'DINPro-Medium';
 }
 .header-about{
 	right:270px;
@@ -164,7 +164,8 @@ h3.big-article-title{
 }
 
 /* Newest */
-
+.newest-image{
+}
 .container-newest{
 	margin: 10px 100px 100px 75px;
 }
@@ -310,7 +311,7 @@ ul.tag_list{
 
 #main-image{
 	padding: 100px 0 0 30px;
-	background:darkgray;
+	background:#CECECE;
 }
 .body-post{
 	background: #FFFFFF;
@@ -361,13 +362,13 @@ ul.tag_list{
 /* Circle images and Contributor elements */
 .circular {
 	margin:10px;
-    width: 125px;
-    height: 125px;
+    width: 130px;
+    height: 130px;
     border-radius: 100px;
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
     background: url(http://f.cl.ly/items/3F3L3T0H1U3F1x1a3p3H/Screen%20Shot%202013-06-07%20at%2010.37.19%20PM.png) no-repeat;
-	background-size:125px;
+	background-size:130px;
 }
  
 .circular img {
@@ -455,3 +456,25 @@ h3.contributor-name{
 /*.slides {
   display:none;
 }*/
+.contributor-bio{
+	background:#F0F1F1;
+	color:rgb(138, 138, 138);
+	font-family: 'Engel Light ltd';
+	font-size:15px;
+	border:2px #D4D5D7 solid;
+	width:700px;
+	padding:10px;
+	float:left;
+}
+.contributor-layout{
+	float:left;
+	margin:0;
+}
+.contributor-title{
+	font-size:40px;
+	text-transform:uppercase;
+}
+.container-contributor{
+	width:900px;
+	padding: 50px 0 150px 90px;
+}

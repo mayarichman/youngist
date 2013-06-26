@@ -1,0 +1,50 @@
+<!-- this can be put in an include -->
+<!-- assign a new variable to hold current page contributors -->
+{% assign contributorname = {{page.contributors}} %}
+<div class='main-content'>
+	<div class='container-contributor'>
+		<div class='contributor-layout contributor-info'><div class='circular'><!-- should include contributors photo --></div>
+	</div>
+	<div>
+	<div class='contributor-layout contributor-title'>{{ page.contributors }}</div>
+	<img class='twitter' src="{{site.baseurl}}/img/twitter-bird-light-bgs.png"/>
+	<img class='facebook' src="{{site.baseurl}}/img/FB-f-Logo__blue_29.png"/>
+	</div>
+	<div class='contributor-bio'>{{ page.bio }}</div>
+</div>
+
+<!-- This should be an include because it repeats for the feeds and contributors -->
+	<ul class='feed-container'>
+  	{% for post in site.posts %}
+	{% if post.contributors == contributorname %}
+	{% if post.class == contributor %}
+			<div class='tag-container'>
+			<li class='archive_list'>
+				<img class='contributor-post-image' src="{{post.image}}" width=400px;/>
+				<a class="archive_list_article_link" href='{{site.baseurl}}/{{post.url}}/'><h3 class='post-title'>{{post.headline}}</h3></a>
+    			<p class="post-tagline">{{post.tagline}}</p>
+				<div class='tag-list-container'>
+					<ul class="tag_list">
+						{% for tag in post.tags %}
+						<li class="tags"><a class="tag_list_link" href="{{site.baseurl}}/tag/{{ tag }}/">{{ tag }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+  		  	</li>
+			</div>
+  {% endif %}
+  {% endif %} 
+  {% endfor %}
+</ul>
+<script>
+//changes size of main picture based on how many tags are present
+window.onload = function() {
+var width = $('.tag-list-container').width();
+console.log(width);
+var newwidth = width + 'px';
+//assign padding value according toimage width
+$('.contributor-post-image').css('width',newwidth);
+
+}
+</script>
+</div>

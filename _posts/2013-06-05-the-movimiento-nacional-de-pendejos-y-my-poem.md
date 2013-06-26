@@ -6,6 +6,8 @@ headline: "The Movimiento Nacional de Pendejos y My Poem"
 tagline: "The Movimiento Nacional de Pendejos y My Poem"
 title: "The Movimiento Nacional de Pendejos y My Poem - {young}ist"
 excerpt: This text describes the article for the meta tag
+image: http://media.tumblr.com/157a66f7bcdb59d7991378f6a2a0856c/tumblr_inline_mnxwflYPTH1qz4rgp.png
+imagetype: link
 categories:
 - mustread
 tags:
